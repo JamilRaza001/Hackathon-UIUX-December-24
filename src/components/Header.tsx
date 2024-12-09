@@ -25,10 +25,10 @@ const Header = () => {
           </Link>
           <div className="relative group">
             <Link
-              href="/pages"
+              href="/cart"
               className="hover:text-[#FF9F0D] flex items-center"
             >
-              Pages
+              Cart
               <span className="ml-1">&#9662;</span>
             </Link>
             {/* Dropdown */}
