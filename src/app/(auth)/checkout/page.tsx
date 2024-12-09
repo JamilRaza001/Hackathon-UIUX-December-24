@@ -21,10 +21,10 @@ const CheckoutPage = () => {
           <Link href="/" className="text-gray-300 hover:underline">
             Home
           </Link>
-          <span className="text-orange-500">
+          <span className="text-[#FF9F0D]">
             <IoIosArrowForward className="w-4 h-4" />
           </span>
-          <span className="text-orange-500">Checkout</span>
+          <span className="text-[#FF9F0D]">Checkout</span>
         </p>
       </div>
 
@@ -106,7 +106,7 @@ const CheckoutPage = () => {
               <IoIosArrowBack className="w-3 h-3" />
               Back to cart
             </button>
-            <button className="w-full lg:w-auto bg-orange-400 text-white px-4 py-2 rounded-md shadow-md hover:bg-orange-500 flex items-center justify-center gap-2">
+            <button className="w-full lg:w-auto bg-orange-400 text-white px-4 py-2 rounded-md shadow-md hover:bg-[#FF9F0D] flex items-center justify-center gap-2">
               Proceed to shipping
               <IoIosArrowForward className="w-3 h-3" />
             </button>
@@ -165,7 +165,7 @@ const CheckoutPage = () => {
             </div>
           </div>
 
-          <button className="w-full mt-6 bg-[#FF9F0D] text-white px-4 py-2 rounded-md shadow-md hover:bg-orange-500 flex items-center justify-center gap-2">
+          <button className="w-full mt-6 bg-[#FF9F0D] text-white px-4 py-2 rounded-md shadow-md hover:bg-[#FF9F0D] flex items-center justify-center gap-2">
             Place an order
             <IoIosArrowForward className="w-3 h-3" />
           </button>
