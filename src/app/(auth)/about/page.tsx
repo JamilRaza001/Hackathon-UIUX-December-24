@@ -1,33 +1,13 @@
 import { IoMdPlay } from "react-icons/io";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { IoIosArrowForward } from "react-icons/io";
+import CommonHeader from "@/components/CommonHeader";
 
 const AboutPage = () => {
   return (
     <div>
       {/* Header Section */}
-      <div
-        className="relative bg-cover bg-center h-48 flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: "url('/images/menu_1.png')",
-        }}
-      >
-        <h1 className="text-white text-3xl font-bold text-center">
-          About Us
-        </h1>
-        <p className="text-white mt-2 text-center flex items-center gap-1">
-          <Link href="/" className="text-gray-300 hover:underline">
-            Home
-          </Link>
-          <span className="text-[#FF9F0D]">
-            <IoIosArrowForward className="w-4 h-4" />
-          </span>
-          <span className="text-[#FF9F0D]">About Us</span>
-        </p>
-      </div>
-
+<CommonHeader title="About" subTitle="Home" />
       {/* About Section */}
       <section className="max-w-7xl mx-auto py-12 px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Side - Images */}

@@ -1,31 +1,11 @@
+import CommonHeader from "@/components/CommonHeader";
 import Image from "next/image";
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
 
 export default function Cart() {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Header Section */}
-      <div
-        className="relative bg-cover bg-center h-48 flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: "url('/images/menu_1.png')",
-        }}
-      >
-        <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
-          Shopping Cart
-        </h1>
-        <p className="text-white mt-2 text-center flex items-center gap-1">
-          <Link href="/" className="text-gray-300 hover:underline">
-            Home
-          </Link>
-          <span className="text-orange-500">
-            <IoIosArrowForward className="w-4 h-4" />
-          </span>
-          <span className="text-orange-500">Shopping Cart</span>
-        </p>
-      </div>
-
+      <CommonHeader title="Cart" subTitle="Home" />
       <div className="container mx-auto px-4 md:px-8 py-8">
         {/* Cart Table */}
         <div className="overflow-x-auto bg-white shadow-md rounded-lg mb-8">

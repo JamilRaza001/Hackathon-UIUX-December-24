@@ -1,27 +1,10 @@
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
+import CommonHeader from "@/components/CommonHeader";
 export default function SigninPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div
-        className="relative bg-cover bg-center h-48 flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: "url('/images/menu_1.png')",
-        }}
-      >
-        <h1 className="text-white text-3xl font-bold text-center">Sign Up</h1>
-        <p className="text-white mt-2 text-center flex items-center gap-1">
-          <Link href="/" className="text-gray-300 hover:underline">
-            Home
-          </Link>
-          <span className="text-[#FF9F0D]">
-            <IoIosArrowForward className="w-4 h-4" />
-          </span>
-          <span className="text-[#FF9F0D]">Sign Up</span>
-        </p>
-      </div>
+      <CommonHeader title="Sign Up" subTitle="Home" />
 
       {/* Signup Form */}
       <div className="flex items-center justify-center py-16 px-4 lg:px-0 bg-gray-50">
@@ -93,11 +76,23 @@ export default function SigninPage() {
           {/* Social Login */}
           <div>
             <button className="w-full flex items-center justify-center mb-3 p-3 border border-gray-300 rounded-md hover:bg-gray-100">
-              <Image width={400} height={400} src="/images/goo.png" alt="Google" className="h-5 w-5 mr-2" />
+              <Image
+                width={400}
+                height={400}
+                src="/images/goo.png"
+                alt="Google"
+                className="h-5 w-5 mr-2"
+              />
               Sign up with Google
             </button>
             <button className="w-full flex items-center justify-center p-3 border border-gray-300 rounded-md hover:bg-gray-100">
-              <Image width={400} height={400} src="/images/appple.png" alt="Apple" className="h-5 w-5 mr-2" />
+              <Image
+                width={400}
+                height={400}
+                src="/images/appple.png"
+                alt="Apple"
+                className="h-5 w-5 mr-2"
+              />
               Sign up with Apple
             </button>
           </div>

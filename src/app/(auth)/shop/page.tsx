@@ -1,32 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-
+import CommonHeader from "@/components/CommonHeader";
 const ProductDetails = () => {
   return (
     <div className="bg-white">
       {/* Header */}
-      <div
-        className="relative bg-cover bg-center h-48 flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: "url('/images/menu_1.png')",
-        }}
-      >
-        <h1 className="text-white text-2xl sm:text-3xl font-bold text-center">
-          Shop
-        </h1>
-        <p className="text-white mt-2 text-center flex items-center gap-1">
-          <Link href="/" className="text-gray-300 hover:underline">
-            Home
-          </Link>
-          <span className="text-orange-500">
-            <IoIosArrowForward className="w-4 h-4" />
-          </span>
-          <span className="text-orange-500">Shop</span>
-        </p>
-      </div>
-
+      <CommonHeader title="Shop" subTitle="Home" />
       {/* Main Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-8">
         <div className="bg-white p-4 sm:p-8 rounded-lg shadow-lg flex flex-wrap md:flex-nowrap gap-6">

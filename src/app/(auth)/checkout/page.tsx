@@ -1,32 +1,13 @@
 import { IoIosArrowBack } from "react-icons/io";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
-
+import CommonHeader from "@/components/CommonHeader";
 const CheckoutPage = () => {
   return (
     <div className="bg-checkout-bg bg-cover bg-center min-h-screen ">
       {/* Header Section */}
-      <div
-        className="relative bg-cover bg-center h-48 flex flex-col items-center justify-center"
-        style={{
-          backgroundImage: "url('/images/menu_1.png')",
-        }}
-      >
-        <h1 className="text-white text-3xl font-bold text-center">
-          Shopping Cart
-        </h1>
-        <p className="text-white mt-2 text-center flex items-center gap-1">
-          <Link href="/" className="text-gray-300 hover:underline">
-            Home
-          </Link>
-          <span className="text-[#FF9F0D]">
-            <IoIosArrowForward className="w-4 h-4" />
-          </span>
-          <span className="text-[#FF9F0D]">Checkout</span>
-        </p>
-      </div>
+     <CommonHeader title="Checkout" subTitle="Home" />
 
       {/* Main Content */}
       <div className="container mx-auto px-4 lg:px-20 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8">

@@ -1,19 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import CommonHeader from "@/components/CommonHeader";
 import Section4 from "@/components/Section4";
 
 const Menu = () => {
   return (
     <div className="bg-white text-black">
       {/* Header Section */}
-      <div
-        className="relative text-white text-center py-12 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/menu_1.png')" }}
-      >
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">Our Menu</h1>
-        <p className="text-lg md:text-xl lg:text-2xl mt-2">Delicious & Fresh</p>
-      </div>
-
+ <CommonHeader title="Menu" subTitle="Home" />
       {/* Starter Menu Section */}
       <div className="py-12 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-32">
         <div className="flex flex-col lg:flex-row gap-8">

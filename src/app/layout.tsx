@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { Inter} from "next/font/google";
+import { Inter, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BottomFooter from "@/components/BottomFooter";
+
+// Initialize fonts
 const inter = Inter({ subsets: ["latin"] });
+const greatVibes = Great_Vibes({
+  subsets: ["latin"], // Subsets of the font you need
+  weight: "400",      // Great Vibes comes in only one weight
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* Set Inter as the default font */}
       <body className={inter.className}>
-      <Header />{children}<Footer />
-        </body>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
+        <BottomFooter />
+      </body>
     </html>
   );
 }

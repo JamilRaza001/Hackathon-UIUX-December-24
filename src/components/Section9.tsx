@@ -40,14 +40,14 @@ const BlogSection = () => {
         </div>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {blogPosts.map((post, index) => (
             <div
               key={index}
-              className="bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-black border-2 border-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
               {/* Image */}
-              <div className="relative h-56">
+              <div className="relative h-56 ">
                 <Image
                   src={post.image}
                   alt={post.title}

@@ -1,17 +1,15 @@
-import { FaInstagram } from "react-icons/fa6";
-import { CiTwitter } from "react-icons/ci";
 import React from "react";
 import Image from "next/image";
-import { FiFacebook } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-8 mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-center border-b border-[#FF9F0D] pb-8 mb-8">
           <div className="text-center md:text-left">
-            <h2 className="text-[#FF9F0D] text-xl font-bold">
-              Still You Need Our Support?
+            <h2 className="text-white text-xl font-bold">
+              <span className="text-[#FF9F0D]"> Sti</span>ll You Need Our
+              Support?
             </h2>
             <p className="text-gray-400 mt-2">
               Dont wait; make a smart & logical quote here. Its pretty easy.
@@ -22,11 +20,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="bg-gray-800 text-gray-300 px-4 py-2 rounded-l-md focus:outline-none w-64"
+                className="bg-[#FF9F0D] text-white px-4 py-[6px] rounded-l-md focus:outline-none w-64"
               />
               <button
                 type="submit"
-                className="bg-[#FF9F0D] text-[14px] px-2 text-white lg:px-4 py-2 lg:py-2 rounded-r-md hover:bg-yellow-600 transition"
+                className="bg-white text-[14px] px-2 text-[#FF9F0D] lg:px-4 py-2 lg:py-2 rounded-r-md hover:bg-yellow-100 transition"
               >
                 Subscribe Now
               </button>
@@ -128,23 +126,11 @@ const Footer = () => {
                   </div>
                 </div>
               </li>
-              {/* Repeat the same structure for additional posts */}
             </ul>
           </div>
         </div>
 
         {/* Copyright Section */}
-        <div className="mt-8 text-center border-t  border-gray-700 pt-4 flex justify-center items-center gap-5">
-          <div className="">
-            <p className="text-gray-500 text-center">
-              Copyright © 2022 by Ayxemn. All Rights Reserved.
-            </p>
-          </div>
-          <div className="flex justify-center space-x-4 mt-4"></div>
-          <FiFacebook className="w-4 h-4 md:w-6 md:h-6  text-white hover:text-gray-300 transition duration-300" />
-          <CiTwitter className="md:w-6 h-4 w-4 md:h-6 text-white hover:text-yellow-500 transition duration-300" />
-          <FaInstagram className="w-4 h-4 md:w-6 md:h-6 text-white hover:text-gray-300 transition duration-300" />
-        </div>
       </div>
     </footer>
   );

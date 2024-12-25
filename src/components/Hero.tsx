@@ -26,7 +26,7 @@ const Hero = () => {
 
           {/* Text Content Section */}
           <div className="text-center md:text-left flex-1">
-            <p className="text-[#FF9F0D] text-sm sm:text-base md:text-lg font-medium">
+            <p className="text-[#FF9F0D] font-vibes text-sm sm:text-base md:text-lg font-medium">
               Its Quick & Amazing!
             </p>
             <div className="flex flex-col gap-2 mt-4">
@@ -52,11 +52,11 @@ const Hero = () => {
           {/* Plate Image */}
           <div className="relative">
             <Image
-              src="/images/hero1.png" // Replace with your actual image path
+              src="/images/hero1.png"
               width={1000}
               height={1000}
               alt="Delicious food"
-              className="rounded-full w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] object-cover"
+              className=" w-[400px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] object-cover"
             />
           </div>
         </div>

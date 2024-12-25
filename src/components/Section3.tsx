@@ -6,50 +6,70 @@ export default function WhyChooseUs() {
     <div className="bg-black text-white py-12 px-6 sm:px-8 md:px-12 lg:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Section: Images */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
-          {/* First Column */}
-          <div className="space-y-4">
+        <div className="bg-black py-8">
+      <div className="max-w-4xl mx-auto grid grid-cols-4 gap-4">
+        {/* First Column - Large Image */}
+        <div className="col-span-2 row-span-2">
+          <div className="relative w-full h-full">
             <Image
               src="/images/section3_1.png"
               alt="Tacos"
-              width={500}
-              height={500}
-              className="rounded-lg w-full object-cover"
-            />
-            <Image
-              src="/images/section3_3.png"
-              alt="Fried Chicken"
-              width={500}
-              height={500}
-              className="rounded-lg w-full object-cover"
-            />
-          </div>
-
-          {/* Second Column */}
-          <div className="space-y-4">
-            <Image
-              src="/images/section3_2.png"
-              alt="Burger"
-              width={500}
-              height={500}
-              className="rounded-lg w-full object-cover"
-            />
-            <Image
-              src="/images/section3_4.png"
-              alt="Cheeseburger"
-              width={500}
-              height={500}
-              className="rounded-lg w-full object-cover"
-            />
-            <Image
-              src="/images/section3_5.png"
-              alt="Salad"
-              width={500}
-              height={500}
-              className="rounded-lg w-full object-cover"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
             />
           </div>
         </div>
+
+        {/* Second Column - Top Image */}
+        <div className="col-span-2">
+          <div className="relative w-full h-48">
+            <Image
+              src="/images/section3_2.png"
+              alt="Burger"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+
+        {/* Third Column - Stacked Images */}
+        <div className="space-y-4 col-span-1 row-span-2">
+          <div className="relative w-full h-48">
+            <Image
+              src="/images/section3_3.png"
+              alt="Fried Chicken"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="relative w-full h-48">
+            <Image
+              src="/images/section3_4.png"
+              alt="Cheeseburger"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+
+        {/* Fourth Column - Bottom Image */}
+        <div className="col-span-2">
+          <div className="relative w-full h-48">
+            <Image
+              src="/images/section3_5.png"
+              alt="Salad"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
         {/* Right Section: Text and Icons */}
         <div className="text-center md:text-left">

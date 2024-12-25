@@ -3,6 +3,10 @@ import React from "react";
 import Link from "next/link";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
+
+
+
 const Header = () => {
   return (
     <header className="bg-black text-white">
@@ -32,12 +36,9 @@ const Header = () => {
               <span className="ml-1">&#9662;</span>
             </Link>
             {/* Dropdown */}
-            <div className="absolute left-0 mt-2 w-40 bg-black text-white rounded shadow-lg hidden group-hover:block">
+            <div className="absolute left-0  mt-2 w-28 bg-white text-black rounded shadow-lg hidden group-hover:block">
               <Link href={"/"} className="block px-4 py-2 hover:bg-gray-700">
                 Page 1
-              </Link>
-              <Link href={"/"} className="block px-4 py-2 hover:bg-gray-700">
-                Page 2
               </Link>
             </div>
           </div>
@@ -65,8 +66,12 @@ const Header = () => {
             </button>
           </div>
           <button>
-            <FaShoppingBag className="w-6 h-6 text-white" />
+            <FaShoppingBag className="w-6 h-6 text-white hover:text-[#FF9F0D]" />
           </button>
+          <Link href="/signin">
+          <button>
+            <FaUser className="w-6 h-6 text-white hover:text-[#FF9F0D]" />
+          </button></Link>
           <button>
             <IoMenu className="w-6 h-6 text-white lg:hidden" />
           </button>

@@ -10,7 +10,7 @@ import Section8 from "@/components/Section8";
 import Section9 from "@/components/Section9";
 export default function Home() {
   return (
-    <main>
+    <main className=" bg-black">
       <Hero />
       <Section1 />
       <Section2 />
