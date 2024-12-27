@@ -1,13 +1,19 @@
+'use client';
 import { FaShoppingBag } from "react-icons/fa";
-import React from "react";
 import Link from "next/link";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
 
-
+import React, { useState } from "react";
 
 const Header = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
     <header className="bg-black text-white">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
@@ -27,20 +33,22 @@ const Header = () => {
           <Link href="/checkout" className="hover:text-[#FF9F0D]">
             Checkout
           </Link>
-          <div className="relative group">
-            <Link
-              href="/cart"
+          <div className="relative">
+            <button
+              onClick={toggleDropdown}
               className="hover:text-[#FF9F0D] flex items-center"
             >
               Cart
               <span className="ml-1">&#9662;</span>
-            </Link>
+            </button>
             {/* Dropdown */}
-            <div className="absolute left-0  mt-2 w-28 bg-white text-black rounded shadow-lg hidden group-hover:block">
-              <Link href={"/"} className="block px-4 py-2 hover:bg-gray-700">
-                Page 1
-              </Link>
-            </div>
+            {dropdownOpen && (
+              <div className="absolute left-0 mt-2 w-28 bg-white text-black rounded shadow-lg z-50">
+                <Link href="/" className="block px-4 py-2 hover:bg-gray-700">
+                  Page 1
+                </Link>
+              </div>
+            )}
           </div>
           <Link href="/about" className="hover:text-[#FF9F0D]">
             About
@@ -69,9 +77,10 @@ const Header = () => {
             <FaShoppingBag className="w-6 h-6 text-white hover:text-[#FF9F0D]" />
           </button>
           <Link href="/signin">
-          <button>
-            <FaUser className="w-6 h-6 text-white hover:text-[#FF9F0D]" />
-          </button></Link>
+            <button>
+              <FaUser className="w-6 h-6 text-white hover:text-[#FF9F0D]" />
+            </button>
+          </Link>
           <button>
             <IoMenu className="w-6 h-6 text-white lg:hidden" />
           </button>
